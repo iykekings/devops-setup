@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "./node_modules/.bin/eslint . --fix"
+    "lint": "./node_modules/.bin/eslint . --fix",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,14 @@
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.4",
     "jest": "^24.9.0",
     "prettier": "1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm run lint && npm test"
+    }
   }
 }
