@@ -5,7 +5,7 @@ function sum(...numbers) {
   throw new Error('Contains invalid number');
 }
 const person = {
-  name: 'Matt',
+  name: "Matt",
   age: 23,
   sex: 'male'
 };
