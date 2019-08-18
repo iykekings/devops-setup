@@ -1,6 +1,10 @@
-module.exports = function sum(a, b) {
-  if (typeof a === 'number' && typeof b === 'number') {
-    return a + b;
+function sum(...numbers) {
+  if (numbers.every(n => typeof n === 'number')) {
+    return numbers.reduce((acc, item) => acc + item, 0);
   }
-  return 'Values must be numbers';
+  throw new Error('Contains invalid number');
+}
+
+module.exports = {
+  sum,
 };
