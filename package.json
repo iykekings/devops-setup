@@ -1,0 +1,25 @@
+{
+  "name": "devops-setup",
+  "version": "1.0.0",
+  "description": "trying out different settings for devops",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iykekings/devops-setup.git"
+  },
+  "keywords": [
+    "Devops",
+    "Test",
+    "circle",
+    "CI"
+  ],
+  "author": "Ikechukwu Eze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iykekings/devops-setup/issues"
+  },
+  "homepage": "https://github.com/iykekings/devops-setup#readme"
+}
