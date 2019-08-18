@@ -4,7 +4,13 @@ function sum(...numbers) {
   }
   throw new Error('Contains invalid number');
 }
+const person = {
+  name: 'Matt',
+  age: 23,
+  sex: 'male'
+};
 
 module.exports = {
   sum,
+  person
 };
