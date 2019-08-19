@@ -3,3 +3,9 @@
 # devops-setup
 
 ## Setup for a standard automated workflow
+
+### Todos
+  - setup express
+  - setup databases
+  - setup AWS
+  - setup heroku
