@@ -1,8 +1,9 @@
 function sum(...numbers) {
-  if (numbers.every(n => typeof n === 'number')) {
+  // eslint-disable-next-line no-restricted-globals
+  if (numbers.every(n => typeof n === 'number' && !isNaN(n))) {
     return numbers.reduce((acc, item) => acc + item, 0);
   }
-  throw new Error('Contains invalid number');
+  throw Error('Contains invalid number');
 }
 const person = {
   name: 'Matt',
